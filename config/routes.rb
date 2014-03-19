@@ -5,8 +5,10 @@ DigistoreApi::Application.routes.draw do
      get '/products', to: "products#index"
      get '/products/:id', to: "products#show"
      get '/items', to: "items#index"
+     post '/items', to: "items#create"
      get '/carts', to: "carts#index"
      get '/carts/:id', to: "carts#show"
+     post 'carts', to: "carts#create"
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
